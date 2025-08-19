@@ -3,7 +3,7 @@ from src.model import load_model
 from src.train import train_model
 from src.evaluate import compute_metrics
 from datasets import Dataset
-from utils import set_global_seed
+from src.utils import set_global_seed
 
 set_global_seed(42)
 
