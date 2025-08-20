@@ -33,4 +33,8 @@ def train_model(model, train_dataset, eval_dataset, output_dir, compute_metrics)
     model.to(device)
 
     trainer.train()
+
+    print(f"\nBest model saved at: {trainer.state.best_model_checkpoint}")
+    print(f"Best F1 score: {trainer.state.best_metric:.4f}")
+
     return trainer
