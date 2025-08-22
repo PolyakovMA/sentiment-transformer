@@ -2,7 +2,8 @@ from transformers import Trainer, TrainingArguments
 import torch
 
 def get_device():
-    return torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    return device
 
 def train_model(model, train_dataset, eval_dataset, output_dir, compute_metrics, custom_compute_loss):
     training_args = TrainingArguments(
