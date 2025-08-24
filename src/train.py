@@ -19,7 +19,9 @@ def train_model(model, train_dataset, eval_dataset, output_dir, compute_metrics,
         metric_for_best_model="f1",
         greater_is_better=True,              # чем выше F1, тем лучше
         save_total_limit=1,                  # сохранять только последнюю лучшую модель
-        seed=42
+        seed=42,
+        report_to="none",
+        logging_strategy="no"
     )
 
     trainer = Trainer(
