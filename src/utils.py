@@ -35,6 +35,7 @@ def get_class_weights(labels):
 
 def custom_compute_loss(outputs, labels, class_weights):
 
-    loss_fct = CrossEntropyLoss(weight=class_weights.to(outputs.device))
-    loss = loss_fct(outputs.view(-1, outputs.size(-1)), labels.view(-1))
-    return loss
+    logits = outputs.logits
+    loss_fct = CrossEntropyLoss(weight=class_weights.to(logits.device))
+    
+    return loss_fct(logits.view(-1, logits.size(-1)), labels.view(-1))
