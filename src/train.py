@@ -5,7 +5,7 @@ def get_device():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     return device
 
-def train_model(model, train_dataset, eval_dataset, output_dir, compute_metrics, custom_compute_loss):
+def train_model(model, train_dataset, eval_dataset, output_dir, compute_metrics, compute_loss_func):
     training_args = TrainingArguments(
         output_dir=output_dir,
         num_train_epochs=3,
@@ -28,7 +28,7 @@ def train_model(model, train_dataset, eval_dataset, output_dir, compute_metrics,
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
         compute_metrics=compute_metrics,
-        compute_loss_func=custom_compute_loss
+        compute_loss_func=compute_loss_func
     )
 
     device = get_device()
