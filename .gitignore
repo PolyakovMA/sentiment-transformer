@@ -10,3 +10,6 @@ venv/
 # Логи и кеши
 __pycache__/
 *.log
+
+# test jupyter notebook
+notebooks/Test.ipynb
