@@ -10,7 +10,7 @@ Clone the repository and install dependencies:
 git clone https://github.com/PolyakovMA/sentiment-transformer.git
 cd sentiment-transformer
 pip install -r requirements.txt
-
+```bash
 
 
 
