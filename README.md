@@ -12,7 +12,17 @@ cd sentiment-transformer
 pip install -r requirements.txt
 ```
 
-
-
 ## 📦 Project Structure
 
+sentiment-transformer/
+├── data/ # Dataset files
+├── notebooks/ # Jupyter notebooks for exploration and experiments
+├── src/ # Source code
+│ ├── data_preprocessing.py
+│ ├── evaluate.py
+│ ├── model.py
+│ ├── train.py
+│ └── utils.py
+├── .gitignore # Git ignore file
+├── requirements.txt # Python dependencies
+└── TSA.py # Main script to train the model
