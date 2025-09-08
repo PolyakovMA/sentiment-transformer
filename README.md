@@ -11,6 +11,10 @@ git clone https://github.com/PolyakovMA/sentiment-transformer.git
 cd sentiment-transformer
 pip install -r requirements.txt
 ```
+## 🚀 Training
+
+Run the notebook or TSA.py to train the model.
+The Jupyter Notebook contains a detailed guide for this project.
 
 ## 📦 Project Structure
 
@@ -37,3 +41,5 @@ sentiment-transformer/
 - pandas
 - numpy
 
+## 📌 Notes
+Use GPU (e.g., in Colab) to speed up training.
