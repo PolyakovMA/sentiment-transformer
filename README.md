@@ -30,10 +30,10 @@ sentiment-transformer/
 ```
 
 ## Dependencies
--Python 3.8+
--PyTorch
--Transformers (Hugging Face)
--scikit-learn
--pandas
--numpy
+- Python 3.8+
+- PyTorch
+- Transformers (Hugging Face)
+- scikit-learn
+- pandas
+- numpy
 
