@@ -15,11 +15,25 @@ pip install -r requirements.txt
 ## 📦 Project Structure
 
 ```
-IFRS16_Lease_Calculator/
-├── IFRS_16.py           # main calculation script
-├── requirements.txt     # project dependencies
-├── README.md            # project description
-└── data/
-    ├── IFRS_16.xlsx
-    └── Output_example.xlsx
+sentiment-transformer/
+├── data/ # Dataset files
+├── notebooks/ # Jupyter notebooks for exploration and experiments
+├── src/ # Source code
+│ ├── data_preprocessing.py
+│ ├── evaluate.py
+│ ├── model.py
+│ ├── train.py
+│ └── utils.py
+├── .gitignore # Git ignore file
+├── requirements.txt # Python dependencies
+└── TSA.py # Main script to run the pipeline
 ```
+
+## Dependencies
+-Python 3.8+
+-PyTorch
+-Transformers (Hugging Face)
+-scikit-learn
+-pandas
+-numpy
+
